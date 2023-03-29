@@ -1,0 +1,110 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+{% block content %}
+
+    <!-- Page Header Start -->
+    <div class="page-header" style="background: url( {% static 'assets/img/banner1.jpg' %} );">
+      <div class="container">
+        <div class="row">         
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+              <h2 class="page-title">Testimonials</h2>
+              <a href="{% url 'main:index' %}">Home</a>
+              <span>/</span>
+              <span class="current">Testimonials</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End --> 
+
+    <!-- Start Testimonial Section  -->        
+    <div class="testimonial section">
+      <div class="container">
+        <div class="row">
+          <!-- Testimonial section  -->
+          <div class="testimonials-carousel owl-carousel">
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="img">
+                  <a href="#"><img src=" {% static 'assets/img/testimonial/img1.jpg' %} " alt=""></a>
+                </div>
+                <div class="datils">
+                  <h5>Expert Tom</h5>
+                  <p>"We had our home on the market with Real Homes and after only 3 viewings the house was SOLD!! And we got the price we wanted."</p>
+                  <span>-Gary</span>
+                </div>
+                <div class="testimonial-bottom">
+                  <span>Business 2 Peopele 1 Places Miles</span>
+                </div>
+              </div>
+            </div>                
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="img">
+                  <a href="#"><img src=" {% static 'assets/img/testimonial/img2.jpg' %} " alt=""></a>
+                </div>
+                <div class="datils">
+                  <h5>Expert Alex</h5>
+                  <p>"We had our home on the market with Real Homes and after only 3 viewings the house was SOLD!! And we got the price we wanted."</p>
+                  <span>-Renee</span>
+                </div>
+                <div class="testimonial-bottom">
+                  <span>Economy 1 People 1 Places</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="img">
+                  <a href="#"><img src=" {% static 'assets/img/testimonial/img3.jpg' %} " alt=""></a>
+                </div>
+                <div class="datils">
+                  <h5>Expert Lucas</h5>
+                  <p>"We had our home on the market with Real Homes and after only 3 viewings the house was SOLD!! And we got the price we wanted."</p>
+                  <span>-Ramsey</span>
+                </div>
+                <div class="testimonial-bottom">
+                  <span>Business 2 Peopele 1 Places Miles</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="img">
+                  <a href="#"><img src=" {% static 'assets/img/testimonial/img4.jpg' %} " alt=""></a>
+                </div>
+                <div class="datils">
+                  <h5>Expert Jens</h5>
+                  <p>"We had our home on the market with Real Homes and after only 3 viewings the house was SOLD!! And we got the price we wanted."</p>
+                  <span>-Orley</span>
+                </div>
+                <div class="testimonial-bottom">
+                  <span>Economy 1 People 1 Places</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="img">
+                  <a href="#"><img src=" {% static 'assets/img/testimonial/img2.jpg' %} " alt=""></a>
+                </div>
+                <div class="datils">
+                  <h5>Expert Jorge</h5>
+                  <p>"We had our home on the market with Real Homes and after only 3 viewings the house was SOLD!! And we got the price we wanted."</p>
+                  <span>-Zac</span>
+                </div>
+                <div class="testimonial-bottom">
+                  <span>Business 2 Peopele 1 Places Miles</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonial Section  -->
+       
+{% endblock %}

@@ -1,0 +1,509 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="author" content="EstateX">
+    <title>Home – EstateX Real Estate Theme Bootstrap HTML5 Template</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href=" {% static 'assets/img/favicon.png' %} ">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=" {% static 'assets/css/bootstrap.min.css' %} " type="text/css">    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href=" {% static 'assets/fonts/font-awesome.min.css' %} " type="text/css">   
+    <!-- Line Icons CSS -->
+    <link rel="stylesheet" href=" {% static 'assets/fonts/line-icons/line-icons.css' %} " type="text/css">  
+    <!-- Main Styles -->
+    <link rel="stylesheet" href=" {% static 'assets/css/main.css' %} " type="text/css">
+ 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href=" {% static 'assets/extras/animate.css' %} " type="text/css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href=" {% static 'assets/extras/owl.carousel.css' %} " type="text/css">
+    <link rel="stylesheet" href=" {% static 'assets/extras/owl.theme.css' %} " type="text/css">
+    <!-- Rev Slider Css -->
+    <link rel="stylesheet" href=" {% static 'assets/extras/settings.css' %} " type="text/css">
+    <!-- Nivo Lightbox Css -->
+    <link rel="stylesheet" href=" {% static 'assets/extras/nivo-lightbox.css' %} " type="text/css">
+    <!-- Responsive CSS Styles -->
+    <link rel="stylesheet" href=" {% static 'assets/css/responsive.css' %} " type="text/css">
+    <!-- Slicknav Css -->
+    <link rel="stylesheet" href=" {% static 'assets/css/slicknav.css' %} " type="text/css">
+    <!-- Bootstrap Select -->
+    <link rel="stylesheet" href=" {% static 'assets/css/bootstrap-select.min.css' %} "> 
+
+    
+   
+  </head>
+
+  <body>  
+      <div class="col text-center" style="margin-bottom: 100px;">
+        <div class="btn-group">
+               <a  href="{% url 'main:index' %}"> <button type="button" class="btn btn-common">Buy Property</button></a>
+                <a  href="{% url 'main:car' %}"><button  type="button" class="btn btn-common">Buy Car</button></a>
+              
+    </div>
+    </div>
+           
+            
+     
+   
+    <!-- Counter Section Start -->
+    <section id="counter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="counting">
+              <div class="desc">
+                <div class="icon"><i class="icon-home"></i>
+                  <h3 class="counter"> 1100</h3> 
+                </div>
+                <p>Complete Project</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="counting">
+              <div class="desc">
+                <div class="icon">
+                  <i class="icon-key"></i><h3 class="counter">1020</h3>
+                </div>                
+                <p>Cars and Properties Sold</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="counting">
+              <div class="desc">
+                <div class="icon">
+                  <i class="icon-emotsmile"></i><h3 class="counter">450</h3>
+                </div>                
+                <p>Happy Clients</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="counting">
+              <div class="desc">
+                <div class="icon">
+                  <i class="icon-cup"></i><h3 class="counter">120</h3>
+                </div>                
+                <p>Awards Win</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Section End -->  
+
+   
+
+    <!-- Start Agent Member Section -->
+    <section class="section">
+      <div class="container">
+        <!-- Start Big Heading -->
+        <h2 class="section-title text-center">Meet Our Agent</h2>
+        <!-- End Big Heading -->
+        <!-- Some Text -->
+        <p class="description text-center">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta est, <br/>
+        itaque inventore, eum, hic ullam quos sint dolore doloremque rerum enim? 
+        </p>
+        <div class="row">
+          <!-- Start Memebr 1 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="agent-member">
+              <div class="agent-thumbnail">
+                <img src=" {% static 'assets/img/agent/agent-01.png' %} " alt="">
+                <div class="overlay">
+                  <div class="social-media">
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="info">
+                <h4>Tahir Hameed</h4>
+                <p>Real Estate Agent</p>
+                <a class="profile-link" href="{% url 'main:agents' %}">See Full Profile <i class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Start Memebr 2 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="agent-member">
+              <div class="agent-thumbnail">
+                <img src=" {% static 'assets/img/agent/agent-02.png' %} " alt="">
+                <div class="overlay">
+                  <div class="social-media">
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="info">
+                <h4>Muhammad Waseem</h4>
+                <p>Real Estate Agent</p>
+                <a class="profile-link" href="{% url 'main:agents' %}">See Full Profile <i class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Start Memebr 3 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="agent-member">
+              <div class="agent-thumbnail">
+                <img src=" {% static 'assets/img/agent/agent-03.png' %} " alt="">
+                <div class="overlay">
+                  <div class="social-media">
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="info">
+                <h4>Talha Javed</h4>
+                <p>Real Estate Agent</p>
+                <a class="profile-link" href="{% url 'main:agents' %}">See Full Profile <i class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Start Memebr 4 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="agent-member">
+              <div class="agent-thumbnail">
+                <img src=" {% static 'assets/img/agent/agent-04.png' %} " alt="">
+                <div class="overlay">
+                  <div class="social-media">
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="info">
+                <h4>Hamza Majeed</h4>
+                <p>Real Estate Broker</p>
+                <a class="profile-link" href="{% url 'main:agents' %}">See Full Profile <i class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- End Memebr 4 -->
+        </div>
+      </div>
+    </section>
+    <!-- Start Agent Member Section --> 
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <h1 class="section-title">
+          From The Blog
+        </h1>
+        <div class="row">          
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 blog-item">
+            <!-- Blog Item Starts -->
+            <div class="blog-item-wrapper">
+              <div class="blog-item-img">
+                <a href="{% url 'main:blogdetails' %}">
+                  <img src=" {% static 'assets/img/blog/home-items/img1.jpg' %} " alt="">
+                </a>                
+                <a href="#" class="blog-date">
+                  10 <br> OCT
+                </a>                
+                <div class="blog-item-info">
+                  <a href="#">
+                    <i class="icon-user">
+                    </i>
+                    Smith
+                  </a>
+                  <a href="#">
+                    <i class="icon-heart">
+                    </i>
+                    9
+                  </a>
+                  <a href="#">
+                    <i class="icon-bubbles">
+                    </i>
+                    10
+                  </a>
+                </div>
+              </div>
+              <div class="blog-item-text">
+                <a href="{% url 'main:blogdetails' %}">
+                  <h3>
+                    Latest Architectural Design
+                  </h3>
+                </a>
+                <p>
+                  Lorem must explain to you how all this mistaolt dete denouncing pleasure and pralsing plan wasnad I will give you a complete pain was parising
+                </p>
+                <a href="{% url 'main:blogdetails' %}" class="btn btn-common btn-sm">Read More</a>
+              </div>
+            </div>
+            <!-- Blog Item Wrapper Ends-->
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 blog-item">
+            <!-- Blog Item Starts -->
+            <div class="blog-item-wrapper">
+              <div class="blog-item-img">
+                <a href="{% url 'main:blogdetails' %}">
+                  <img src=" {% static 'assets/img/blog/home-items/img2.jpg' %} " alt="">
+                </a>                
+                <a href="#" class="blog-date">
+                  15 <br> OCT
+                </a>                
+                <div class="blog-item-info">
+                  <a href="#">
+                    <i class="icon-user">
+                    </i>
+                    Alfred
+                  </a>
+                  <a href="#">
+                    <i class="icon-heart">
+                    </i>
+                    18
+                  </a>
+                  <a href="#">
+                    <i class="icon-bubbles">
+                    </i>
+                    20
+                  </a>
+                </div>
+              </div>
+              <div class="blog-item-text">
+                <a href="{% url 'main:blogdetails' %}">
+                  <h3>
+                    Real Estate Feswtival - 2016
+                  </h3>
+                </a>
+                <p>
+                  Lorem must explain to you how all this mistaolt dete denouncing pleasure and pralsing plan wasnad I will give you a complete pain was parising
+                </p>
+                <a href="{% url 'main:blogdetails' %}" class="btn btn-common btn-sm">Read More</a>
+              </div>
+            </div>
+            <!-- Blog Item Wrapper Ends-->
+          </div>          
+          
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 blog-item">
+            <!-- Blog Item Starts -->
+            <div class="blog-item-wrapper">
+              <div class="blog-item-img">
+                <a href="{% url 'main:blogdetails' %}">
+                  <img src=" {% static 'assets/img/blog/home-items/img3.jpg' %} " alt="">
+                </a>                
+                <a href="#" class="blog-date">
+                  17 <br> OCT
+                </a>                
+                <div class="blog-item-info">
+                  <a href="#">
+                    <i class="icon-user">
+                    </i>
+                    Zenefer
+                  </a>
+                  <a href="#">
+                    <i class="icon-heart">
+                    </i>
+                    19
+                  </a>
+                  <a href="#">
+                    <i class="icon-bubbles">
+                    </i>
+                    28
+                  </a>
+                </div>
+              </div>
+              <div class="blog-item-text">
+                <a href="{% url 'main:blogdetails' %}">
+                  <h3>
+                    Visual Design Concept of Real Estate
+                  </h3>
+                </a>
+                <p>
+                  Lorem must explain to you how all this mistaolt dete denouncing pleasure and pralsing plan wasnad I will give you a complete pain was parising
+                </p>
+                <a href="{% url 'main:blogdetails' %}" class="btn btn-common btn-sm">Read More</a>
+              </div>
+            </div>
+            <!-- Blog Item Wrapper Ends-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog Section End -->
+
+    <!-- Clients Section -->
+    <div class="clients section">
+      <div class="container">
+        <div class="row">
+          <div id="clients-scroller">
+            <div class="items">
+              <img src=" {% static 'assets/img/clients/img1.png' %} " alt="">
+            </div>
+            <div class="items">
+              <img src=" {% static 'assets/img/clients/img2.png' %} " alt="">
+            </div>
+            <div class="items">
+              <img src=" {% static 'assets/img/clients/img3.png' %} " alt="">
+            </div>
+            <div class="items">
+              <img src=" {% static 'assets/img/clients/img4.png' %} " alt="">
+            </div>
+            <div class="items">
+              <img src=" {% static 'assets/img/clients/img5.png' %} " alt="">
+            </div>
+            <div class="items">
+              <img src=" {% static 'assets/img/clients/img6.png' %} " alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Client Section End -->
+    
+    <!-- Start Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="row">
+            <!-- Start Contact Widget -->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="footer-widget contact-widget">
+                <h4>
+                  <a href="index.html"><img src=" {% static 'assets/img/logo.png' %} " class="img-responsive" alt="Footer Logo" /></a>
+                </h4>
+                <p>
+                  There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration in
+                </p>
+              </div>
+            </div>
+            <!-- End Contact Widget -->
+
+            <!-- Start Address Widget -->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="footer-widget">
+                <h4>
+                  Contact Info
+                </h4>
+                <ul class="address">
+                  <li>
+                    <a href="#"><i class="icon-location-pin"></i> York Blvd, Los Angeles, US</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-phone"></i> (518) 2014-040 43</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-envelope"></i> hello@estatex.com</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-fax"></i> FAX:(123) 123-4567</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Address Widget -->
+
+            <!-- Start latest Work Posts Widget -->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="footer-widget">
+                <h4>
+                  Usefull Links
+                </h4>
+                <div class="footer-nav">
+                  <ul>
+                    <li><a href="#"><i class="icon-arrow-right"></i>Bayonne, New Jersey</a></li>
+                    <li><a href="#"><i class="icon-arrow-right"></i>Greenville, New Jersey</a></li>
+                    <li><a href="#"><i class="icon-arrow-right"></i>The Heights, New Jersey</a></li>
+                    <li><a href="#"><i class="icon-arrow-right"></i>Bayonne, New Jersey</a></li>
+                    <li><a href="#"><i class="icon-arrow-right"></i>Greenville, New Jersey</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- End latest Work  Widget -->
+
+            <!-- Start Text Widget -->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="footer-widget">
+                <h4>
+                  Image Gallery
+                </h4>
+                <div class="flicker-gallery">
+                  <a href="#"><img src=" {% static 'assets/img/flicker/img1.png' %} " alt=""></a>
+                  <a href="#"><img src=" {% static 'assets/img/flicker/img2.png' %} " alt=""></a>
+                  <a href="#"><img src=" {% static 'assets/img/flicker/img3.png' %} " alt=""></a>
+                  <a href="#"><img src=" {% static 'assets/img/flicker/img4.png' %} " alt=""></a>
+                  <a href="#"><img src=" {% static 'assets/img/flicker/img5.png' %} " alt=""></a>
+                  <a href="#"><img src=" {% static 'assets/img/flicker/img6.png' %} " alt=""></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Text Widget -->
+          </div>      
+        </div>
+      </footer>
+      <!-- End Footer Section -->
+
+      <!-- Start Copyright -->
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="site-info text-center">
+                <p>&copy; All rights reserved 2017 - Designed & Developed by <a href="http://uideck.com">UIdeck</a></p>
+              </div>             
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Copyright -->
+
+      <!-- Go To Top Link -->
+      <a href="#" class="back-to-top">
+        <i class="icon-arrow-up"></i>
+      </a>
+
+      <!-- Start Loader -->
+      <div id="loader">
+        <div class="sk-folding-cube">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+        </div>
+      </div>    
+        
+      <!-- All js here -->
+      <script type="text/javascript" src=" {% static 'assets/js/jquery-min.js' %} "></script>      
+      <script type="text/javascript" src=" {% static 'assets/js/bootstrap.min.js' %} "></script>
+ 
+      <script type="text/javascript" src=" {% static 'assets/js/jquery.parallax.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/owl.carousel.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/wow.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/main.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/jquery.mixitup.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/nivo-lightbox.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/jquery.counterup.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/waypoints.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/form-validator.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/contact-form-script.js' %} "></script>    
+      <script type="text/javascript" src=" {% static 'assets/js/jquery.themepunch.revolution.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/jquery.themepunch.tools.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/jquery.slicknav.js' %} "></script>
+      <script src=" {% static 'assets/js/bootstrap-select.min.js' %} "></script>    
+    
+  </body>
+</html>

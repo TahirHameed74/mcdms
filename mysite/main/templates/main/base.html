@@ -1,0 +1,765 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="EstateX">
+    <title>About EstateX – Real Estate Theme Bootstrap HTML5 Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href=" {% static 'assets/img/favicon.png' %} ">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=" {% static 'assets/css/bootstrap.min.css' %} " type="text/css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href=" {% static 'assets/fonts/font-awesome.min.css' %} " type="text/css">
+    <!-- Line Icons CSS -->
+    <link rel="stylesheet" href=" {% static 'assets/fonts/line-icons/line-icons.css' %} " type="text/css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href=" {% static 'assets/css/main.css' %} " type="text/css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href=" {% static 'assets/extras/animate.css' %} " type="text/css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href=" {% static 'assets/extras/owl.carousel.css' %} " type="text/css">
+    <link rel="stylesheet" href=" {% static 'assets/extras/owl.theme.css' %} " type="text/css">
+    <!-- Rev Slider Css -->
+    <link rel="stylesheet" href=" {% static 'assets/extras/settings.css' %} " type="text/css">
+    <!-- Nivo Lightbox Css -->
+    <link rel="stylesheet" href=" {% static 'assets/extras/nivo-lightbox.css' %} " type="text/css">
+    <!-- Responsive CSS Styles -->
+    <link rel="stylesheet" href=" {% static 'assets/css/responsive.css' %} " type="text/css">
+    <!-- Slicknav Css -->
+    <link rel="stylesheet" href=" {% static 'assets/css/slicknav.css' %} " type="text/css">
+    <!-- Bootstrap Select -->
+    <link rel="stylesheet" href=" {% static 'assets/css/bootstrap-select.min.css' %} ">
+  </head>
+
+  <body>
+    <!-- Header Section Start -->
+    <div class="header">
+
+      <!-- Start Top Bar -->
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-sm-6">
+              <!-- Start Contact Info -->
+              <ul class="contact-details">
+                <li>
+                  <a href="#">
+                  <i class="icon-location-pin">
+                  </i>
+                  York Blvd, Los Angeles, US
+                  </a>
+                </li>
+              </ul>
+              <!-- End Contact Info -->
+            </div>
+            <div class="col-md-5 col-sm-6">
+              <!-- Start Social Links -->
+              <ul class="social-list">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+              <!-- End Social Links -->
+
+              <!-- Login Account Start -->
+              <div class="account-setting">
+                <a href="{% url 'main:signup' %}">
+                  <i class="icon-pencil"></i>
+                  <span>Register</span>
+                </a>
+                <a href="{% url 'main:login' %}">
+                  <i class="icon-lock"></i>
+                  <span>Login</span>
+                </a>
+              </div>
+              <!-- Login Account End -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Top Bar -->
+
+      <!-- Start bottom Bar -->
+      <div class="top-bar-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-sm-6">
+              <div class="header-logo">
+                <a href="{% url 'main:index' %}"><img src=" {% static 'assets/img/logo.png' %} " alt=""></a>
+              </div>
+              <div class="name-title">
+                Multi-purpose Real Estate <br> HTML5 Template
+              </div>
+            </div>
+            <div class="col-md-7 col-sm-6">
+              <div class="contact pull-right">
+                <div class="call">
+                  <h3><i class="icon-phone"></i> (213) 974-3211</h3>
+                  <p>hello@estatex.com</p>
+                </div>
+                  <div class="box-language">
+                    <form id="form-language">
+                      <div class="btn-group toggle-wrap">
+                      <span class="toggle">
+                        <span>English</span>
+                        <span class="hidden">Language</span>
+                      </span>
+                      <ul style="display: none;" class="toggle_cont pull-right">
+                        <li>
+                        <button class="language-select selected" type="button" name="en-gb">
+                        <img src=" {% static 'assets/img/language/en-gb.png' %} " alt="English" title="English" height="11" width="16">
+                        English </button>
+                        </li>
+                        <li>
+                        <button class="language-select" type="button" name="de-DE">
+                        <img src=" {% static 'assets/img/language/de-DE.png' %} " alt="Deutsch" title="Deutsch" height="11" width="16">
+                        Deutsch </button>
+                        </li>
+                        <li>
+                        <button class="language-select" type="button" name="ru-ru">
+                        <img src=" {% static 'assets/img/language/ru-ru.png' %} " alt="Русский" title="Русский" height="11" width="16">
+                        Русский </button>
+                        </li>
+                      </ul>
+                    </div>
+                    </form>
+                  </div>
+                  <div class="box-currency">
+                    <form method="post" id="form-currency">
+                      <div class="btn-group toggle-wrap">
+                        <span class="toggle">
+                          <span>USD</span>
+                          <span class="hidden">Currency</span>
+                        </span>
+                        <ul class="toggle_cont pull-right">
+                          <li>
+                          <button class="currency-select selected" type="button" name="USD">
+                          $ USD </button>
+                          </li>
+                          <li>
+                          <button class="currency-select" type="button" name="EUR">
+                          € EUR
+                          </button>
+                          </li>
+                          <li>
+                          <button class="currency-select" type="button" name="GBP">
+                          £ GBP </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Bottom Bar -->
+
+      <!-- Start  Logo & Naviagtion  -->
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="row">
+            <div class="navbar-header">
+              <!-- Stat Toggle Nav Link For Mobiles -->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <i class="fa fa-bars"></i>
+              </button>
+              <div class="logo-wrapper hidden">
+                <a class="navbar-brand" href="{% url 'main:index' %}">
+                  <img src=" {% static 'assets/img/logo.png' %} " alt="">
+                </a>
+              </div>
+            </div>
+            <div class="navbar-collapse collapse">
+              <!-- Start Navigation List -->
+              <ul class="nav navbar-nav">
+                <li>
+                  <a  href="{% url 'main:main' %}">
+                  Home
+                  </a>
+                  <ul class="dropdown">
+                    <li>
+                      <a href="{% url 'main:index' %}">
+                        Home V1 + Rev Slider
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'main:normalslider' %}">
+                        Home V2 + Theme Slider
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'main:largemap' %}">
+                        Home V3 + Large Map
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+
+                  <a href="{% url 'main:listing' %}">
+                  Listing
+                  </a>
+                  <ul class="dropdown">
+                    <li>
+                      <a href="#">Simple Listing</a>
+                      <ul>
+                        <li>
+                          <a href="{% url 'main:listing' %}">
+                          Simple Listing 1
+                          </a>
+                        </li>
+                        <li>
+
+                          <a href="{% url 'main:listingmap2' %}">
+                          Simple Listing 2
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Grid Listing</a>
+                      <ul>
+                        <li>
+
+                          <a href="{% url 'main:gridlisting' %}">
+                          Grid Listing 1
+                          </a>
+                        </li>
+                        <li>
+
+                          <a href="{% url 'main:listingmap' %}">
+                          Grid Listing 2
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="{% url 'main:property' %}">
+                  Property
+                  </a>
+                  <ul class="dropdown">
+                    <li>
+                      <a href="{% url 'main:property' %}">
+                      Default- Variation
+                      </a>
+                    </li>
+                    <li>
+
+                      <a href="{% url 'main:singleproperty' %}">
+                        Single Property
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'main:fullgallery' %}">
+                        Full Width Gallery
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="{% url 'main:news' %}">
+                  News
+                  </a>
+                </li>
+                <li>
+
+                  <a href="{% url 'main:portfolio4' %}">
+                  Gallery
+                  </a>
+                  <ul class="dropdown">
+                    <li>
+                      <a href="{% url 'main:portfolio2' %}">
+                      2 Columns Gallery
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'main:portfolio3' %}">
+                      3 Columns Gallery
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'main:portfolio4' %}">
+                      4 Columns Gallery
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="active" href="{% url 'main:about' %}">
+                  Pages
+                  </a>
+                  <ul class="dropdown">
+                    <li>
+                      <a class="active" href="{% url 'main:about' %}">
+                      About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'main:agents' %}">
+                      Agents
+                      </a>
+                    </li>
+                    <li>
+
+                      <a href="{% url 'main:rent' %}">
+                      For Rent
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'main:sale' %}">
+                      For Sale
+                      </a>
+                    </li>
+                    <li>
+
+                      <a href="{% url 'main:miamicity' %}">
+                      Miami City
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'main:dashboard' %}">
+                      Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'main:submission' %}">
+                      Submission Form
+                      </a>
+                    </li>
+                     <li>
+                      <a href="{% url 'main:faq' %}">
+                      FAQs
+                      </a>
+                    </li>
+                     <li>
+                      <a href="{% url 'main:testimonials' %}">
+                      Testimonials
+                      </a>
+                    </li>
+                     <li>
+                      <a href="{% url 'main:typography' %}">
+                      Typography
+                      </a>
+                    </li>
+                     <li>
+                      <a href="{% url 'main:columns' %}">
+                      Columns
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+
+                  <a href="{% url 'main:singlefamily' %}">
+                  Types
+                  </a>
+                  <ul class="dropdown">
+                    <li>
+                      <a href="{% url 'main:singlefamily' %}">
+                      Single Family Home
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'main:apartmentbuilding' %}">
+                      Apartment Building
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'main:apartment' %}">
+                      Apartment
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'main:office' %}">
+                      Office
+                      </a>
+                    </li>
+                     <li>
+                      <a href="{% url 'main:shop' %}">
+                      Shop
+                      </a>
+                    </li>
+                     <li>
+                      <a href="{% url 'main:viall' %}">
+                      Villa
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="{% url 'main:contact' %}">
+                  Contact Us
+                  </a>
+                </li>
+              </ul>
+              <!-- End Navigation List -->
+            </div>
+          </div>
+        </div>
+        <!-- End Header Logo & Naviagtion -->
+
+        <!-- Mobile Menu Start -->
+        <ul class="mobile-menu">
+          <li>
+            <a href="{% url 'main:index' %}">
+            Home
+            </a>
+            <ul class="dropdown">
+              <li>
+                <a href="{% url 'main:index' %}">
+                  Home V1 + Rev Slider
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:normalslider' %}">
+                  Home V2 + Theme Slider
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:largemap' %}">
+                  Home V3 + Large Map
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="{% url 'main:listing' %}">
+            Listing
+            </a>
+            <ul class="dropdown">
+              <li>
+                <a href="{% url 'main:listing' %}">
+                Simple Listing 1
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:listingmap' %}">
+                Simple Listing 2
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:gridlisting' %}">
+                Grid Listing 1
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:listingmap' %}">
+                Grid Listing 2
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="{% url 'main:property' %}">
+            Property
+            </a>
+            <ul class="dropdown">
+              <li>
+                <a href="{% url 'main:property' %}">
+                Default- Variation
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:singleproperty' %}">
+                  Single Property
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:fullgallery' %}">
+                  Full Width Gallery
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="{% url 'main:news' %}">
+            News
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'main:portfolio4' %}">
+            Gallery
+            </a>
+            <ul class="dropdown">
+              <li>
+                <a href="{% url 'main:portfolio2' %}">
+                2 Columns Gallery
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:portfolio3' %}">
+                3 Columns Gallery
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:portfolio4' %}">
+                4 Columns Gallery
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="active" href="{% url 'main:about' %}">
+            Pages
+            </a>
+            <ul class="dropdown">
+              <li>
+                <a class="active" href="{% url 'main:about' %}">
+                About Us
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:agents' %}">
+                Agents
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:rent' %}">
+                For Rent
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:sale' %}">
+                For Sale
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:miamicity' %}">
+                Miami City
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:dashboard' %}">
+                Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:submission' %}">
+                Submission Form
+                </a>
+              </li>
+               <li>
+                <a href="{% url 'main:faq' %}">
+                FAQs
+                </a>
+              </li>
+               <li>
+                <a href="{% url 'main:testimonials' %}">
+                Testimonials
+                </a>
+              </li>
+               <li>
+                <a href="{% url 'main:typography' %}">
+                Typography
+                </a>
+              </li>
+               <li>
+                <a href="{% url 'main:columns' %}">
+                Columns
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="{% url 'main:singlefamily' %}">
+            Types
+            </a>
+            <ul class="dropdown">
+              <li>
+                <a href="{% url 'main:singlefamily' %}">
+                Single Family Home
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:apartmentbuilding' %}">
+                Apartment Building
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:apartment' %}">
+                Apartment
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'main:office' %}">
+                Office
+                </a>
+              </li>
+               <li>
+                <a href="{% url 'main:shop' %}">
+                Shop
+                </a>
+              </li>
+               <li>
+                <a href="{% url 'main:viall' %}">
+                Villa
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="{% url 'main:contact' %}">
+            Contact Us
+            </a>
+          </li>
+        </ul>
+        <!-- Mobile Menu End -->
+
+      </nav>
+
+    </div>
+    <!-- Header Section End -->
+     {% block content %}
+     {% endblock %}
+
+     <footer>
+      <div class="container">
+        <div class="row">
+            <!-- Start Contact Widget -->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="footer-widget contact-widget">
+                <h4>
+                  <a href="{% url 'main:index' %}"><img src=" {% static 'assets/img/logo.png' %} " class="img-responsive" alt="Footer Logo" /></a>
+                </h4>
+                <p>
+                  There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration in
+                </p>
+              </div>
+            </div>
+            <!-- End Contact Widget -->
+
+            <!-- Start Address Widget -->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="footer-widget">
+                <h4>
+                  Contact Info
+                </h4>
+                <ul class="address">
+                  <li>
+                    <a href="#"><i class="icon-location-pin"></i> York Blvd, Los Angeles, US</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-phone"></i> (518) 2014-040 43</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-envelope"></i> hello@estatex.com</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-fax"></i> FAX:(123) 123-4567</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Address Widget -->
+
+            <!-- Start latest Work Posts Widget -->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="footer-widget">
+                <h4>
+                  Usefull Links
+                </h4>
+                <div class="footer-nav">
+                  <ul>
+                    <li><a href="#"><i class="icon-arrow-right"></i>Bayonne, New Jersey</a></li>
+                    <li><a href="#"><i class="icon-arrow-right"></i>Greenville, New Jersey</a></li>
+                    <li><a href="#"><i class="icon-arrow-right"></i>The Heights, New Jersey</a></li>
+                    <li><a href="#"><i class="icon-arrow-right"></i>Bayonne, New Jersey</a></li>
+                    <li><a href="#"><i class="icon-arrow-right"></i>Greenville, New Jersey</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- End latest Work  Widget -->
+
+            <!-- Start Text Widget -->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="footer-widget">
+                <h4>
+                  Image Gallery
+                </h4>
+                <div class="flicker-gallery">
+                  <a href="#"><img src=" {% static 'assets/img/flicker/img1.png' %} " alt=""></a>
+                  <a href="#"><img src=" {% static 'assets/img/flicker/img2.png' %} " alt=""></a>
+                  <a href="#"><img src=" {% static 'assets/img/flicker/img3.png' %} " alt=""></a>
+                  <a href="#"><img src=" {% static 'assets/img/flicker/img4.png' %} " alt=""></a>
+                  <a href="#"><img src=" {% static 'assets/img/flicker/img5.png' %} " alt=""></a>
+                  <a href="#"><img src=" {% static 'assets/img/flicker/img6.png' %} " alt=""></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Text Widget -->
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer Section -->
+
+      <!-- Start Copyright -->
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="site-info text-center">
+                <p>&copy; All rights reserved 2017 - Designed & Developed by <a href="http://uideck.com">UIdeck</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Copyright -->
+
+      <!-- Go To Top Link -->
+      <a href="#" class="back-to-top">
+        <i class="icon-arrow-up"></i>
+      </a>
+
+      <!-- Start Loader -->
+      <div id="loader">
+        <div class="sk-folding-cube">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+        </div>
+      </div>
+      <!-- All js here -->
+      <script type="text/javascript" src=" {% static 'assets/js/jquery-min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/bootstrap.min.js' %} "></script>
+
+      <script type="text/javascript" src=" {% static 'assets/js/jquery.parallax.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/owl.carousel.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/wow.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/main.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/jquery.mixitup.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/nivo-lightbox.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/jquery.counterup.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/waypoints.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/form-validator.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/contact-form-script.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/jquery.themepunch.revolution.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/jquery.themepunch.tools.min.js' %} "></script>
+      <script type="text/javascript" src=" {% static 'assets/js/jquery.slicknav.js' %} "></script>
+      <script src=" {% static 'assets/js/bootstrap-select.min.js' %} "></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,511 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+{% block content %}
+
+    <!-- Page Header Start -->
+    <div class="page-header" style="background: url( {% static 'assets/img/banner1.jpg' %} );">
+      <div class="container">
+        <div class="row">         
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+              <h2 class="page-title">Single Property</h2>
+              <a href="{% url 'main:index' %}">Home</a>
+              <span>/</span>
+              <span class="current">Single Property</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End --> 
+      
+    <!-- Start Content -->
+    <div id="content">
+      <div class="container">
+        <div class="row">
+          <div class="property-head">
+            <div class="col-md-5 col-sm-4">
+              <h2 class="title-property">
+                Melrose Road, Louis, Mi
+              </h2>
+              <p>Country House</p>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <span class="price-detail">$3200,000</span>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <span class="web-refernce">Web Reference <strong> #3498db</strong></span>
+            </div>
+            <div class="col-md-3 col-sm-4">
+              <div class="icon">
+                <a href="#"><i class="icon-printer"></i> Print</a>
+                <a href="#"><i class="icon-star"></i> Favourite</a>
+                <a href="#"><i class="icon-share"></i> Share</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="details-wrapper">
+              <img src=" {% static 'assets/img/productinfo/sing-img.jpg' %} " alt=""> 
+            </div> 
+          </div>
+          <!-- Product Info Start -->
+          <div class="product-info">
+            <div class="col-md-9 col-sm-12 col-xs-12">   
+              <div class="inner-box details">               
+                <div class="property-dsc">
+                  <h2 class="title-2">Property Description</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum, bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt. Duis euismod placerat rhoncus. Phasellus mollis imperdiet placerat. Sed ac turpis nisl. Mauris at ante mauris. Aliquam posuere fermentum lorem, a aliquam mauris rutrum a. Curabitur sit amet pretium lectus, nec consequat orci. </p>
+                  <p>Duis non tincidunt dui. Sed vehicula, libero at eleifend accumsan, lectus massa mollis metus, a malesuada velit orci nec elit Suspendisse nisl mauris, rhoncus quis faucibus vitae, commodo vitae neque. Nullam vulputate feugiat diam, id tempor neque hendreit quis. Curabitur ut felis ultrices, pellentesque augue ac, bibendum lorem. Curabitur non volutpat augue. Aliquam malesuada scelerisque tortor eget mollis. </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nisi sequi quo laborum eveniet illum ex doloremque porro repellat. Saepe sed atque eos inventore facilis officiis dolorum, incidunt optio iure! Itaque libero et vel labore voluptatem natus nulla, sunt quaerat velit officia! Ipsum fuga magni, sapiente reprehenderit dolores eaque excepturi facilis, praesentium.</p>
+                </div>
+              </div> 
+
+              <div class="inner-box short-info">
+                <h2 class="title-2">Quick Summary</h2>
+                <ul class="additional-details">        
+                <li>
+                    <strong>AC:</strong>
+                    <span>Central</span>
+                </li>
+                <li>
+                    <strong>ACRES:</strong>
+                    <span>0.14</span>
+                </li>
+                <li>
+                    <strong>ACRES SOURCE:</strong>
+                    <span>Assessor</span>
+                </li>
+                <li>
+                    <strong>AP #:</strong>
+                    <span>2639-017-020</span>
+                </li>
+                <li>
+                    <strong>APPLIANCES:</strong>
+                    <span>Cooktop - Gas, Dishwasher, Freestanding Gas Range, Garbage Disposal</span>
+                </li>
+                <li>
+                    <strong>BATHROOM DESCRIPTION:</strong>
+                    <span>Remodeled, Skylight(s), Tile Walls</span>
+                </li>
+                <li>
+                    <strong>DOORS &amp; WINDOWS:</strong>
+                    <span>Double Pane Windows, Skylights</span>
+                </li>
+                <li>
+                    <strong>FIREPLACE DESCRIPTION:</strong>
+                    <span>Brick</span>
+                </li>
+                <li>
+                    <strong>FIREPLACE FUEL:</strong>
+                    <span>Uses Both Gas &amp; Wood</span>
+                </li>
+                <li>
+                    <strong>FIREPLACE LOCATION:</strong>
+                    <span>Living Room</span>
+                </li>
+                <li>
+                    <strong>FLOORS:</strong>
+                    <span>Carpet - Partial, Ceramic Tile</span>
+                </li>
+                <li>
+                    <strong>PLUMBING:</strong>
+                    <span>Full Copper Plumbing</span>
+                </li>
+                </ul>
+              </div>
+
+              <div class="inner-box amenities">
+                <h2 class="title-2">General Amenities</h2>
+                <ul class="amenities-list">
+                  <li><i class="icon-check"></i> Garden</li>
+                  <li><i class="icon-check"></i> 24hr Security</li>
+                  <li><i class="icon-check"></i> Laundry Services</li>
+                  <li><i class="icon-check"></i> Swimming Pool</li>
+                  <li><i class="icon-check"></i> Tennis Court</li>
+                  <li><i class="icon-check"></i> Close to local Schools</li>
+                  <li><i class="icon-check"></i> Pet friendly</li>
+                  <li><i class="icon-check"></i> Balcony sea view</li>
+                  <li><i class="icon-check"></i> Access controlled</li>
+                </ul>
+              </div> 
+
+              <div class="inner-box featured">                
+                <div class="tabs-section">
+                <h2 class="title-2">Featured</h2>
+                  <!-- Nav Tabs -->
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab-1' %} " data-toggle="tab"> House</a></li>
+                    <li><a href="#tab-2' %} " data-toggle="tab">bedroom</a></li>
+                    <li><a href="#tab-3' %} " data-toggle="tab">Garden</a></li>
+                  </ul>
+                  <!-- Tab Panels -->
+                  <div class="tab-content">
+                    <!-- Tab Content 1 -->
+                    <div class="tab-pane in active" id="tab-1">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum, bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt. Duis euismod placerat rhoncus. Phasellus mollis imperdiet placerat. Sed ac turpis nisl. Mauris at ante mauris. Aliquam posuere fermentum lorem, a aliquam mauris rutrum a. Curabitur sit amet pretium lectus, nec consequat orci.</p>
+                    </div>
+                    <!-- Tab Content 2 -->
+                    <div class="tab-pane" id="tab-2">
+                      <p>Duis non tincidunt dui. Sed vehicula, libero at eleifend accumsan, lectus massa mollis metus, a malesuada velit orci nec elit Suspendisse nisl mauris, rhoncus quis faucibus vitae, commodo vitae neque. Nullam vulputate feugiat diam, id tempor neque hendreit quis. Curabitur ut felis ultrices, pellentesque augue ac, bibendum lorem. Curabitur non volutpat augue. Aliquam malesuada scelerisque tortor eget mollis.</p>
+                    </div>
+                    <!-- Tab Content 3 -->
+                    <div class="tab-pane" id="tab-3">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </div>
+                  <!-- End Tab Panels -->
+                </div>
+              </div>
+
+              <div class="inner-box location-map">
+                <h2 class="title-2">Location On Map</h2>
+                <div id="google-map"></div>
+              </div>
+
+              <div class="inner-box contact-info">
+                <h2 class="title-2">Contact info</h2>
+                <div class="agent-media">
+                  <div class="img-left">
+                    <a href="#"><img src=" {% static 'assets/img/productinfo/agent.jpg' %} " alt=""></a>
+                  </div>
+                  <div class="media-body">
+                    <h4>Contact Agent</h4>
+                    <p><i class="icon-user"></i> Brittany Watkins</p>
+                    <p><i class="icon-phone"></i>789 456 3210</p>
+                    <ul class="social-agent">
+                      <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+                      <li><a href="#"><i class="fa fa-google-plus"></i> Google Plus</a></li>
+                      <li><a href="#"><i class="fa fa-youtube"></i> Youtube</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="detail-title-inner">
+                  <h4 class="title-inner">Inquire about this property</h4>
+                </div>
+                <!-- Form -->
+                <form id="contactForm" class="contact-form" data-toggle="validator">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>                    
+                    </div>                    
+                    <div class="col-md-4">
+                      <div class="form-group"> 
+                        <input type="text" class="form-control" id="msg_phone" name="phone" placeholder="Phone" required data-error="Please enter your Phone Number">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">                      
+                        <input type="email" class="form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>                   
+                    <div class="col-md-12">
+                      <div class="form-group"> 
+                        <textarea class="form-control" placeholder="Massage" rows="10" data-error="Write your message" required></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>  
+                    <div class="col-md-12">
+                      <button type="submit" id="submit" class="btn btn-common">Send Message</button>
+                      <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                      <div class="clearfix"></div>   
+                    </div>                
+                  </div> 
+                </form>
+              </div>
+            </div>
+
+            <!--Sidebar-->
+            <aside id="sidebar" class="col-md-3 col-sm-12 col-xs-12 right-sidebar">
+              <!-- Property Agent Widget -->
+              <div class="widget property-agent">
+                <h3 class="widget-title">Agent Details</h3>
+                <div class="agent-info">
+                  <a href="#"><img src=" {% static 'assets/img/productinfo/agent.jpg' %} " alt=""></a>
+                  <h4 class="agent-name">Simon Heqburn</h4>
+                  <ul class="contacts-list">
+                    <li class="office"><i class="icon-screen-smartphone"></i> 0800 123 4567</li>
+                    <li class="mobile"><i class="icon-phone"></i> +1 800 123 4567</li>
+                    <li class="office"><i class="icon-envelope"></i> email@property.com</li>
+                  </ul>
+                  <p>Lorem agent info ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna<br>
+                  <a class="btn btn-common" href="#">Contact Agent</a></p>
+                </div>
+              </div>
+              
+              <!-- Categories Widget -->
+              <div class="widget widget-categories">
+                <h3 class="widget-title">Categories</h3>
+                <ul class="cat-list">
+                  <li>
+                    <a href="#">Sport Properties</a>
+                    <span class="num-posts">15</span>
+                  </li>
+                  <li>
+                    <a href="#">Gardens</a>
+                    <span class="num-posts">25</span>
+                  </li>
+                  <li>
+                    <a href="#">Building Properties</a>
+                    <span class="num-posts">44</span>
+                  </li>
+                  <li>
+                    <a href="#">Lake Properties</a>
+                    <span class="num-posts">12</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Popular Posts widget -->
+              <div class="widget widget-popular-posts">
+              <h3 class="widget-title">Latest News</h3>
+                <ul class="posts-list">
+                  <li>
+                    <div class="widget-thumb">
+                      <a href="#"><img src=" {% static 'assets/img/blog/thumb1.png' %} " alt="" /></a>
+                    </div>
+                    <div class="widget-content">
+                      <a href="#">Awesome Real Estate</a>
+                      <span>25 Nov 2016 <br> 2 Comments</span>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="widget-thumb">
+                      <a href="#"><img src=" {% static 'assets/img/blog/thumb2.png' %} " alt="" /></a>
+                    </div>
+                    <div class="widget-content">
+                      <a href="#">Wordpress Template</a>
+                      <span>27 Nov 2016 <br> 5 Comments</span>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                  <li>
+                    <div class="widget-thumb">
+                      <a href="#"><img src=" {% static 'assets/img/blog/thumb3.png' %} " alt="" /></a>
+                    </div>
+                    <div class="widget-content">
+                      <a href="#">Psd Themes for Sale</a>
+                      <span>29 Nov 2016 <br> 3 Comments</span>
+                    </div>
+                    <div class="clearfix"></div>
+                  </li>
+                </ul>
+              </div>
+              <!-- Featured  -->
+              <div class="widget widget-featured">
+                <h3 class="widget-title">Featured Property</h3>
+                <div class="widget-img">
+                  <img src=" {% static 'assets/img/blog/featured.jpg' %} " alt="">
+                  <div class="text">
+                    <p>California Residence</p>
+                    <span>$3000.000.00</span>
+                  </div>
+                </div>              
+              </div> 
+
+              <!-- Social Media -->
+              <div class="widget widget-social">
+                <h3 class="widget-title">Social Media</h3>
+                <div class="social-link">    
+                  <a class="twitter" target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                    <a class="facebook" target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                    <a class="google" target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+                    <a class="linkedin" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>            
+
+            </aside>
+            <!--End sidebar-->
+          </div>
+          <!-- Product Info End -->
+        </div>
+      </div>  
+
+      <div class="container">
+        <div class="row">
+          <div class="similar-properties">
+            <div class="col-md-12">
+              <h2 class="title-2">Similar Properties</h2>
+            </div>              
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="property-main">
+                <div class="property-wrap">
+                  <div class="property-item">
+                    <figure class="item-thumb">
+                      <a class="hover-effect" href="{% url 'main:property' %}">
+                        <img src=" {% static 'assets/img/property/house-1.jpg' %} " alt="">
+                      </a>
+                      <span class="label-featured">Featured</span>
+                      <div class="label-inner">
+                        <span class="label-status label">For Sale</span>
+                      </div>
+                      <div class="price">
+                        <span class="item-price">$526.885</span>
+                        <span class="item-sub-price">$3.500/sq ft</span>
+                      </div>
+                      <ul class="actions">
+                        <li>
+                          <span class="add-fav"><i class="icon-heart"></i></span>
+                        </li>
+                      </ul>
+                    </figure>
+                    <div class="item-body">
+                      <h3 class="property-title"><a href="#">Guaranteed modern home</a></h3>
+                      <div class="adderess"><i class="icon-location-pin"></i> 385 Drive Street, Louis, US</div>
+                      <div class="info">
+                       <p><span>Bedroom: 4</span><span>Bathroom: 2</span><span>Sq Ft: 2500</span></p>
+                       <p>Single Family Home</p>
+                      </div>
+                    </div>               
+                  </div>              
+                </div>
+                <div class="item-foot date hide-on-list">
+                  <div class="pull-left">
+                    <p class="prop-user-agent"><i class="icon-user"></i> <a href="#">Will Ernest </a></p>
+                  </div>
+                  <div class="pull-right">
+                    <p class="prop-date"><i class="icon-calendar"></i>9 months ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="property-main">
+                <div class="property-wrap">
+                  <div class="property-item">
+                    <figure class="item-thumb">
+                      <a class="hover-effect" href="{% url 'main:property' %}">
+                        <img src=" {% static 'assets/img/property/house-2.jpg' %} " alt="">
+                      </a>
+                      <div class="label-inner">
+                        <span class="label-status label">For Rent</span>
+                      </div>
+                      <div class="price">
+                        <span class="item-price">$486.885</span>
+                        <span class="item-sub-price">$3.500/sq ft</span>
+                      </div>
+                      <ul class="actions">
+                        <li>
+                          <span class="add-fav"><i class="icon-heart"></i></span>
+                        </li>
+                      </ul>
+                    </figure>
+                    <div class="item-body">
+                      <h3 class="property-title"><a href="#">Amazing home for family</a></h3>
+                      <div class="adderess"><i class="icon-location-pin"></i> 1 Booking Dr. St. Louis, Missouri</div>
+                      <div class="info">
+                       <p><span>Bedroom: 3</span><span>Bathroom: 2</span><span>Sq Ft: 750</span></p>
+                       <p>Single Family Home</p>
+                      </div>
+                    </div>               
+                  </div>              
+                </div>
+                <div class="item-foot date hide-on-list">
+                  <div class="pull-left">
+                    <p class="prop-user-agent"><i class="icon-user"></i> <a href="#">Maria Barlow</a></p>
+                  </div>
+                  <div class="pull-right">
+                    <p class="prop-date"><i class="icon-calendar"></i>9 months ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="property-main">
+                <div class="property-wrap">
+                  <div class="property-item">
+                    <figure class="item-thumb">
+                      <a class="hover-effect" href="{% url 'main:property' %}">
+                        <img src=" {% static 'assets/img/property/house-3.jpg' %} " alt="">
+                      </a>
+                     <div class="label-inner">
+                        <span class="label-status label">For Sale</span>
+                      </div>
+                      <div class="price">
+                        <span class="item-price">$250.885</span>
+                        <span class="item-sub-price">$2.500/sq ft</span>
+                      </div>
+                      <ul class="actions">
+                        <li>
+                          <span class="add-fav"><i class="icon-heart"></i></span>
+                        </li>
+                      </ul>
+                    </figure>
+                    <div class="item-body">
+                      <h3 class="property-title"><a href="#">Gorgeous in green house</a></h3>
+                      <div class="adderess"><i class="icon-location-pin"></i> 21st st, California, US</div>
+                      <div class="info">
+                       <p><span>Bedroom: 4</span><span>Bathroom: 3</span><span>Sq Ft: 750</span></p>
+                       <p>Single Family Home</p>
+                      </div>
+                    </div>               
+                  </div>              
+                </div>
+                <div class="item-foot date hide-on-list">
+                  <div class="pull-left">
+                    <p class="prop-user-agent"><i class="icon-user"></i> <a href="{% url 'main:agents' %}">Janet Richmond</a></p>
+                  </div>
+                  <div class="pull-right">
+                    <p class="prop-date"><i class="icon-calendar"></i>9 months ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="property-main">
+                <div class="property-wrap">
+                  <div class="property-item">
+                    <figure class="item-thumb">
+                      <a class="hover-effect" href="{% url 'main:property' %}">
+                        <img src=" {% static 'assets/img/property/house-4.jpg' %} " alt="">
+                      </a>
+                      <div class="label-inner">
+                        <span class="label-status label">For Sale</span>
+                      </div>
+                      <div class="price">
+                        <span class="item-price">$676.885</span>
+                        <span class="item-sub-price">$4.500/sq ft</span>
+                      </div>
+                      <ul class="actions">
+                        <li>
+                          <span class="add-fav"><i class="icon-heart"></i></span>
+                        </li>
+                      </ul>
+                    </figure>
+                    <div class="item-body">
+                      <h3 class="property-title"><a href="#">Family home for sale</a></h3>
+                      <div class="adderess"><i class="icon-location-pin"></i> 53 W 88th St, Louis, US</div>
+                      <div class="info">
+                       <p><span>Bedroom: 5</span><span>Bathroom: 4</span><span>Sq Ft: 900</span></p>
+                       <p>Single Family Hom</p>
+                      </div>
+                    </div>               
+                  </div>              
+                </div>
+                <div class="item-foot date hide-on-list">
+                  <div class="pull-left">
+                    <p class="prop-user-agent"><i class="icon-user"></i> <a href="{% url 'main:agents' %}">Samuel Palmer</a></p>
+                  </div>
+                  <div class="pull-right">
+                    <p class="prop-date"><i class="icon-calendar"></i>9 months ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+             
+    </div>
+    <!-- End Content -->
+
+{% endblock %}

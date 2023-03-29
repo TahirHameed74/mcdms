@@ -1,0 +1,278 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- Page Header Start -->
+    <div class="page-header" style="background: url( {% static 'assets/img/banner1.jpg' %} );">
+      <div class="container">
+        <div class="row">         
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+              <h2 class="page-title">News Details</h2>
+              <a href="{% url 'main:property' %}">Home</a>
+              <span>/</span>
+              <span class="current">News Details</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End --> 
+
+    <!-- Start Content -->
+    <div id="content">
+      <div class="container">
+        <div class="row">        
+          <div class="col-md-8">
+
+            <!-- Start Post -->
+            <div class="blog-post single-post">
+              <!-- Post thumb -->
+              <div class="post-thumb">
+                <a href="#"><img src=" {% static 'assets/img/blog/img-1.jpg' %} " alt=""></a>
+                <div class="hover-wrap">
+                </div>
+              </div>
+              <!-- End Post post-thumb -->
+
+              <!-- Post Content End -->
+              <div class="post-content">                     
+                <h4 class="post-title"><a href="#">Great House on The Hills</a></h4>
+                <div class="meta">
+                  <span class="meta-part"><a href="#"><i class="fa fa-user"></i> Johny Bravo</a></span>
+                  <span class="meta-part"><a href="#"><i class="fa fa-clock-o"></i> 12 Dec 2016</a></span>
+                  <span class="meta-part"><a href="#"><i class="fa fa-comment"></i> Comments 33</a></span>                  
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Class aptent taciti sociosqu ad litora torquent…</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquam facere aliquid atque accUSmus nostrum mollitia beatae quasi vel dolorem, autem nisi! Eius facere magni culpa commodi voluptatem, ducimus dolorum. consectetur adipisicing elit. Hic repellat rerum cupiditate unde iure fuga quisquam voluptas quae voluptatum, perferendis eum, doloremque.</p>
+                <br>
+                <blockquote>
+                  <span class="quote-text">
+                    To explore strange new worlds to seek out new life and new civilizations to boldly go where no man has gone before
+                  </span>
+                  <p><a href="#">- Alfred Marshel</a></p>
+                </blockquote>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error porro ipsam non rerum, itaque nihil aliquid libero inventore. Eius architecto placeat quis nam similique, nobis quod, animi amet. Minima, laboriosam! possimus minus nisi iure pariatur exercitationem blanditiis nesciunt sequi! Nisi, neque, laborum voluptatem exercitationem minus facere reiciendis quis.</p>
+              </div>
+              <!-- Post Content End -->
+            </div>
+            <!-- End Post -->
+
+            <!-- Author section start -->
+            <div class="author">
+                <div class="author-img">
+                  <img src=" {% static 'assets/img/blog/author.jpg' %} " alt="">
+                </div>
+                <div class="author-text">
+                  <div class="author-title">
+                    <h3>Posted by Hansom Rob</h3> 
+                    <span>Designer & Developer</span>
+                  </div>  
+                  <p>We've been waiting for you. Where the kisses are hers and hers and his three too Michaea
+                  Knight a young loner on a crUSde to champion the cause of innocent is the tale of our castaways they are here for a logn logn time for a courage.</p>
+                </div>
+            </div>
+            <!-- Author section end -->
+
+            <!-- Start Comment Area -->
+            <div id="comments">
+                <h3>Comments (3)</h3>
+                <ol class="comments-list">
+                  <li>
+                    <div class="media">
+                      <div class="thumb-left">
+                        <a href="#">
+                          <img alt="" src=" {% static 'assets/img/blog/user1.jpg' %} " />
+                        </a>
+                      </div>
+                      <div class="info-body">
+                        <div class="media-heading">
+                          <h4 class="name">Larsen Mortin</h4>
+                          <span class="comment-date">on 02.12.2016 /<a href="#">Replay</a></span>
+                        </div> 
+                        <p>This is a test so don't be scared hele!!!</p> 
+                      </div>
+                    </div>
+                    <ul>
+                      <li>
+                        <div class="media">
+                          <div class="thumb-left">
+                            <a href="#">
+                              <img alt="" src=" {% static 'assets/img/blog/user2.jpg' %} " />
+                            </a>
+                          </div>
+                          <div class="info-body">
+                            <div class="media-heading">
+                              <h4 class="name">Hansom Rob</h4>
+                              <span class="comment-date">on 02.12.2016 /<a href="#">Replay</a></span>
+                            </div> 
+                            <p>This is a test so don't be scared hele!!!</p> 
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="media">
+                      <div class="thumb-left">
+                        <a href="#">
+                          <img alt="" src=" {% static 'assets/img/blog/user3.jpg' %} " />
+                        </a>
+                      </div>
+                      <div class="info-body">
+                        <div class="media-heading">
+                          <h4 class="name">Sticky Fingerz</h4> 
+                          <span class="comment-date">on 20.12.2016 /<a href="#">Replay</a></span>
+                        </div>  
+                        <p>This is a test so don't be scared hele!!!</p>                        
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+                <!-- Start Respond Form -->
+                <div id="respond">
+                  <h2 class="respond-title">Leave A Comment</h2>
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input id="author" class="form-control" name="author" type="text" value="" size="30" placeholder="Your Name here">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input id="email" class="form-control" name="author" type="text" value="" size="30" placeholder="Your Email">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <textarea id="comment" class="form-control" name="comment" cols="45" rows="8" placeholder="Massage..."></textarea>
+                        </div>
+                        <button type="submit" id="submit" class="btn btn-common">Post Comment</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- End Respond Form -->
+            </div>
+            <!-- End Comment Area -->
+
+          </div>
+
+          <!--Sidebar-->
+          <aside id="sidebar" class="col-md-3 right-sidebar">
+            <!-- Search Widget -->
+            <div class="widget widget-search">
+              <h5 class="widget-title">Search</h5>
+              <form action="#">
+                <input class="form-control" type="search" placeholder="Start Searching..." />
+                <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+
+            <!-- Tag Media -->
+            <div class="widget tag">
+              <h5 class="widget-title">Tags</h5>
+              <a href="#">Villa lux home</a>
+              <a href="#">residence 23ft</a>
+              <a href="#">24ft</a>
+              <a href="#">design</a>                  
+              <a href="#">properties</a>
+              <a href="#">developmet</a>
+              <a href="#">visualisation</a>
+            </div>
+
+            <!-- Categories Widget -->
+            <div class="widget widget-categories">
+              <h5 class="widget-title">Categories</h5>
+              <ul class="cat-list">
+                <li>
+                  <a href="#">Sport Properties</a>
+                  <span class="num-posts">15</span>
+                </li>
+                <li>
+                  <a href="#">Gardens</a>
+                  <span class="num-posts">25</span>
+                </li>
+                <li>
+                  <a href="#">Building Properties</a>
+                  <span class="num-posts">44</span>
+                </li>
+                <li>
+                  <a href="#">Lake Properties</a>
+                  <span class="num-posts">12</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Popular Posts widget -->
+            <div class="widget widget-popular-posts">
+            <h5 class="widget-title">Latest News</h5>
+              <ul class="posts-list">
+                <li>
+                  <div class="widget-thumb">
+                    <a href="#"><img src=" {% static 'assets/img/blog/thumb1.png' %} " alt="" /></a>
+                  </div>
+                  <div class="widget-content">
+                    <a href="#">Awesome Real Estate</a>
+                    <span>25 Nov 2016 / 2 Comments</span>
+                  </div>
+                  <div class="clearfix"></div>
+                </li>
+                <li>
+                  <div class="widget-thumb">
+                    <a href="#"><img src=" {% static 'assets/img/blog/thumb2.png' %} " alt="" /></a>
+                  </div>
+                  <div class="widget-content">
+                    <a href="#">Wordpress Template</a>
+                    <span>27 Nov 2016 / 5 Comments</span>
+                  </div>
+                  <div class="clearfix"></div>
+                </li>
+                <li>
+                  <div class="widget-thumb">
+                    <a href="#"><img src=" {% static 'assets/img/blog/thumb3.png' %} " alt="" /></a>
+                  </div>
+                  <div class="widget-content">
+                    <a href="#">Psd Themes for Sale</a>
+                    <span>29 Nov 2016 / 3 Comments</span>
+                  </div>
+                  <div class="clearfix"></div>
+                </li>
+              </ul>
+            </div>
+            <!-- Featured  -->
+            <div class="widget widget-featured">
+              <h5 class="widget-title">Featured Property</h5>
+              <div class="widget-img">
+                <img src=" {% static 'assets/img/blog/featured.jpg' %} " alt="">
+                <div class="text">
+                  <p>California Residence</p>
+                  <span>$3000.000.00</span>
+                </div>
+              </div>              
+            </div> 
+
+            <!-- Social Media -->
+            <div class="widget widget-social">
+              <h5 class="widget-title">Social Media</h5>
+              <div class="social-link">    
+                <a class="twitter" target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                  <a class="facebook" target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                  <a class="google" target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+                  <a class="linkedin" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>            
+
+          </aside>
+          <!--End sidebar-->
+
+        </div>
+      </div>
+    </div>
+    <!-- End Content -->
+{% endblock %}
